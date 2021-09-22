@@ -198,19 +198,28 @@ And Web dev's resources."
                 </h1>
                 <br />
                 <div className="raw">
-                  <a href="https://twitter.com/appiirathod" target="_blank">
+                  <a
+                    href="https://twitter.com/appiirathod"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fab fa-twitter-square fa-3x"></i>
                   </a>
                   <div style={{ width: "20px" }}></div>
                   <a
                     href="https://www.linkedin.com/in/ansh-rathod-478a81210/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="fab fa-linkedin fa-3x"></i>
                   </a>
                   <div style={{ width: "20px" }}></div>
 
-                  <a href="https://github.com/Ansh-Rathod" target="_blank">
+                  <a
+                    href="https://github.com/Ansh-Rathod"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fab fa-github-square fa-3x"></i>
                   </a>
                 </div>
