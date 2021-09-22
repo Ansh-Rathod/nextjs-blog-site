@@ -64,7 +64,7 @@ with this package, you do not need to store the .ttf of .otf file in your assets
 <br/>
 <br/>
 
-<script type="text/javascript"  src="http://gist-it.appspot.com/https://gist.github.com/anshrathod-blog/135eb983ecd585e78c636de1541b1706.js"></script>
+<script src="https://gist.github.com/anshrathod-blog/135eb983ecd585e78c636de1541b1706.js"></script>
 
 <br/>
 
