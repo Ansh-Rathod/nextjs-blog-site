@@ -20,7 +20,7 @@ export default function Post({ post }) {
 
       <div style={{ height: "10px" }}></div>
 
-      <a href={`/blog/${post.slug}`} passHref target="_blank">
+      <a href={`/blog/${post.slug}`} passHref target="_blank" rel="noreferrer">
         <p className="btn">Read more</p>
       </a>
     </div>
