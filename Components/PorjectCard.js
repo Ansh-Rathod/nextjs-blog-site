@@ -13,7 +13,7 @@ export default function PorjectCard({ project }) {
       <p>{project.description}</p>
       <div style={{ height: "10px" }}></div>
 
-      <a href={project.url} _blank="true" className="btn btn-primary">
+      <a href={project.url} target="_blank" className="btn btn-primary">
         Visit Github
       </a>
     </div>

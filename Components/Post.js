@@ -20,9 +20,9 @@ export default function Post({ post }) {
 
       <div style={{ height: "10px" }}></div>
 
-      <Link href={`/blog/${post.slug}`} passHref>
+      <a href={`/blog/${post.slug}`} passHref target="_blank">
         <p className="btn">Read more</p>
-      </Link>
+      </a>
     </div>
   );
 }

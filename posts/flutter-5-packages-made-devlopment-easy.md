@@ -29,7 +29,7 @@ This will add a line like this to your package's pubspec.yaml (and run an implic
 <br/>
 <br/>
 
-<script src="https://gist.github.com/anshrathod-blog/31491325f9c1f6928a6ffa2cf3c8bfb5.js"></script>
+<script type="text/javascript"  src="https://gist.github.com/anshrathod-blog/31491325f9c1f6928a6ffa2cf3c8bfb5.js"></script>
 
 <br/>
 
@@ -45,7 +45,8 @@ Does your app need a way to send users to external through the URLs?, Either to 
 <br/>
 <br/>
 
-<script src="https://gist.github.com/anshrathod-blog/cd81900def5e4cc50b2d0c77fca54c76.js"></script>
+<script type="text/javascript"  src="https://gist.github.com/anshrathod-blog/cd81900def5e4cc50b2d0c77fca54c76.js"></script>
+
 <br/>
 
 ## google_fonts
@@ -63,7 +64,7 @@ with this package, you do not need to store the .ttf of .otf file in your assets
 <br/>
 <br/>
 
-<script src="https://gist.github.com/anshrathod-blog/135eb983ecd585e78c636de1541b1706.js"></script>
+<script type="text/javascript"  src="http://gist-it.appspot.com/https://gist.github.com/anshrathod-blog/135eb983ecd585e78c636de1541b1706.js"></script>
 
 <br/>
 
@@ -79,7 +80,7 @@ Fetching data from the internet is necessary for most apps. Luckily, Dart and Fl
 <br/>
 <br/>
 
-<script src="https://gist.github.com/anshrathod-blog/420c9fc34bc1e3f40766e68ec268accf.js"></script>
+<script type="text/javascript"  src="https://gist.github.com/anshrathod-blog/420c9fc34bc1e3f40766e68ec268accf.js"></script>
 
 <br/>
 
@@ -98,7 +99,7 @@ The Font Awesome Icon pack available as Flutter Icons. Provides 1500 additional 
 <br/>
 <br/>
 
-<script src="https://gist.github.com/anshrathod-blog/e421d120a19c4d82ecc07b005ecdeebe.js"></script>
+<script type="text/javascript"  src="https://gist.github.com/anshrathod-blog/e421d120a19c4d82ecc07b005ecdeebe.js"></script>
 <br/>
 
 Thanks for reading. see you in my next blog.
