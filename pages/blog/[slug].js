@@ -28,7 +28,11 @@ export default function PostPage({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={excerpt} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={cover_image} />
+        <meta
+          property="og:image"
+          itemprop="image primaryImageOfPage"
+          content={cover_image}
+        />
       </Head>
 
       <div className="overlay-two">
