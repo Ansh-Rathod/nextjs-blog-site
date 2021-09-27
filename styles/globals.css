@@ -14,18 +14,18 @@ a {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-.Background {
+.Background-image {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+  min-height: max-content;
 
-  animation: animatedBackground 10s infinite alternate;
   background-color: #000;
   position: relative;
+  background-image: url("https://source.unsplash.com/1600x900/?code,technology");
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-image: url("https://source.unsplash.com/1600x900/?code,technology");
+  background-position: center;
 }
 .post-body p {
   font-size: 18px;
@@ -62,15 +62,6 @@ a {
     backdrop-filter: blur(10px);
 
     background-color: rgba(0, 0, 0, 0.808);
-  }
-}
-
-@keyframes animatedBackground {
-  from {
-    background-size: 100%;
-  }
-  to {
-    background-size: 150%;
   }
 }
 

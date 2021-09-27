@@ -131,7 +131,7 @@ And Web dev's resources."
           </a> */}
         </div>
         <section>
-          <div className="Background">
+          <div className="Background-image">
             <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back">
@@ -155,7 +155,7 @@ And Web dev's resources."
           </div>
         </section>
         <section>
-          <div className="Background">
+          <div className="Background-image">
             <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back" style={{ margin: "10px" }}>
@@ -167,7 +167,7 @@ And Web dev's resources."
           </div>
         </section>
         <section>
-          <div className="Background">
+          <div className="Background-image">
             <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back" style={{ margin: "10px" }}>
@@ -183,7 +183,7 @@ And Web dev's resources."
           </div>
         </section>
         <section>
-          <div className="Background">
+          <div className="Background-image">
             <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back">
