@@ -61,6 +61,7 @@ whole get_color_repo.dart
 <br/>
 
 <script src="https://gist.github.com/anshrathod-blog/6103aac827228cf95b7a6ce182954ef7.js"></script>
+<br/>
 
 ### Now lets call it and create a UI
 
@@ -70,5 +71,6 @@ you can direct call it from initState or <code>FutureBuilder</code>
 
 <br/>
 <script src="https://gist.github.com/anshrathod-blog/7cf66ea0f78f74a32066a16e953c7c72.js"></script>
+<br/>
 
 Thanks for following along i have created an cool app with this package's implemention you should check out [here](https://github.com/Ansh-Rathod/Flutter-Bloc-MovieDB-App)

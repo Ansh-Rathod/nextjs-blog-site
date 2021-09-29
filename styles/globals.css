@@ -15,11 +15,11 @@ a {
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .Background-image {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   max-width: 100%;
   min-height: max-content;
-
+background-attachment: fixed;
   background-color: #000;
   position: relative;
   background-image: url("https://source.unsplash.com/1600x900/?code,technology");
@@ -30,12 +30,16 @@ a {
 .post-body p {
   font-size: 18px;
 }
+section{
+  background-color: #000;
+}
+
 .overlay {
-  position: absolute;
-  height: 100vh;
+  /* position: absolute; */
+  height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.808);
-
+background-attachment: fixed;
   animation-name: example;
   animation-delay: 500ms;
   animation-timing-function: ease-in-out;
@@ -219,4 +223,52 @@ code {
   background-color: rgb(73, 69, 69);
   color: white;
   padding: 0 10px;
+}
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+body .gist .gist-file {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+body .gist .gist-data {
+  border-bottom: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+body .gist .blob-wrapper {
+  border-radius: 10px;
+}
+
+body .gist .highlight {
+  background-color: transparent;
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 14px;
+}
+
+body .gist .highlight td {
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+
+body .gist .blob-num {
+  color: #000;
+  background-color: rgb(255, 250, 250);
+  pointer-events: none;
+}
+
+body .gist .gist-meta {
+  display: none;
 }

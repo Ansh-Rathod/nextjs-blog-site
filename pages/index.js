@@ -104,8 +104,8 @@ And Web dev's resources."
         <title>Ansh Rathod's Blog</title>
       </Head>
 
-      <div className="scroll-container">
-        <div className="navabr-slide">
+      {/* <div className="section"> */}
+        {/* <div className="navabr-slide"> */}
           {/* <ul id="slide-out" className="sidenav">
             <li />
             <li>
@@ -129,10 +129,11 @@ And Web dev's resources."
           <a href="#" data-target="slide-out" className="sidenav-trigger">
             <i class="fas fa-bars fa-2x"></i>
           </a> */}
-        </div>
+        {/* </div> */}
         <section>
           <div className="Background-image">
             <div className="overlay">
+
               <div className="container center-tag">
                 <div className="color-back">
                   <h2>Ansh Rathod's Blog</h2>
@@ -151,24 +152,12 @@ And Web dev's resources."
                   See All
                 </a>
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="Background-image">
-            <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back" style={{ margin: "10px" }}>
                   <h2>Latest Blogs</h2>
                 </div>
                 <Blogs posts={posts} />
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="Background-image">
-            <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back" style={{ margin: "10px" }}>
                   <h2>My Projects</h2>
@@ -179,12 +168,6 @@ And Web dev's resources."
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="Background-image">
-            <div className="overlay">
               <div className="container center-tag">
                 <div className="color-back">
                   <h2>Get In Touch</h2>
@@ -224,10 +207,18 @@ And Web dev's resources."
                   </a>
                 </div>
               </div>
+          
+
+
+
+
             </div>
+          
+          
           </div>
+
         </section>
-      </div>
+      {/* </div> */}
     </>
   );
 }
