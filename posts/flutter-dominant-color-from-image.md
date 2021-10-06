@@ -2,22 +2,14 @@
 title: "How to get a dominant color from an image in a flutter."
 date: "22 septempber 2021"
 tags: Flutter
-cover_image: "/blog_2/Untitled.png"
+cover_image: "https://github.com/anshrathod-blog/blog-images/blob/main/Untitled.png?raw=true"
 ---
 
   <center>__ __ __</center>                  
 <br/>
-
+<p>
 Howdy, so as you've noticed in the blog image the first screen looks boring and not attractive than the second screen not because I designed it that way but you find a match for color in the image and background color of the scaffold and its looks so awesome and you've seen this pattern in many UI designs but how can we generate this kinda color palette dynamically in our app so you find the right blog post lets get started.
-<br/>
-<br/>
-
-<center>
-
-<img src="https://i.gifer.com/8GGH.gif" alt="Image not found" style="max-width:600px;width:100%;"/>
-
-</center>
-
+</p>
 <br/>
 <br/>
 

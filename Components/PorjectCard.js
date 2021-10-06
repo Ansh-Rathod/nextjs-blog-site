@@ -1,26 +1,31 @@
 export default function PorjectCard({ project }) {
   return (
-    <div className="blog-container">
-      <img src={project.image} alt="" className="materialboxed img" />
-      <div style={{ height: "16px" }}></div>
+    <div className="col col-sm-6 col-md-4 col-lg-3 mb-3">
+      <div className="card" style={{ minHeight: "100%" }}>
+        <img
+          src={project.image}
+          alt=""
+          className="img-responsive"
+          style={{ maxHeight: "200px", objectFit: "cover" }}
+        />
+        <div className="card-body">
+          <p className="badge badge-primary">{project.date}</p>
 
-      <p className="date">{project.date}</p>
-      <div style={{ height: "10px" }}></div>
+          <h5>{project.name + " - " + project.madeWith}</h5>
 
-      <h4>{project.name + " - " + project.madeWith}</h4>
-      <div style={{ height: "10px" }}></div>
-
-      <p>{project.description}</p>
-      <div style={{ height: "10px" }}></div>
-
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noreferrer"
-        className="btn btn-primary"
-      >
-        Visit Github
-      </a>
+          <p>{project.description}</p>
+        </div>
+        <div className="card-footer bg-primary">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-success"
+          >
+            Visit Github
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

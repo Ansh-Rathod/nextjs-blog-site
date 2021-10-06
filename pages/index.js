@@ -4,16 +4,14 @@ import PorjectCard from "../Components/PorjectCard";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { useEffect } from "react";
-import $ from "jquery";
+import React, { useRef } from "react";
 
-if (typeof window !== "undefined") {
-  window.$ = $;
-  window.jQuery = $;
-  require("materialize-css");
-}
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 export default function Home({ posts }) {
+  const myRef = useRef(null);
+  const executeScroll = () => scrollToRef(myRef);
+
   var projects = [
     {
       name: "Tiktok video scroller",
@@ -24,6 +22,16 @@ export default function Home({ posts }) {
       url: "https://github.com/Ansh-Rathod/Flutter-Tiktok-Videos",
       image:
         "https://images.unsplash.com/photo-1551232865-e24823b9e922?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+    },
+    {
+      name: "Marvel Comic Web app",
+      madeWith: "Python Flask",
+      date: "12 december 2020",
+      description:
+        "Marvel's Super-hero comics and characters information made in python flask with marvel devloper api.",
+      url: "https://github.com/Ansh-Rathod/marvel-api",
+      image:
+        "https://images.unsplash.com/photo-1568833450751-fba3c6b2d129?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     },
     {
       name: "SupHeroDb",
@@ -74,29 +82,15 @@ export default function Home({ posts }) {
       image:
         "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     },
-    {
-      name: "Marvel Comic Web app",
-      madeWith: "Python Flask",
-      date: "12 december 2020",
-      description:
-        "Marvel's Super-hero comics and characters information made in python flask with marvel devloper api.",
-      url: "https://github.com/Ansh-Rathod/marvel-api",
-      image:
-        "https://images.unsplash.com/photo-1568833450751-fba3c6b2d129?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    },
   ];
 
-  useEffect(() => {
-    $(".sidenav").sidenav();
-    $(".materialboxed").materialbox();
-  }, []);
   return (
     <>
       <Head>
         <meta property="og:title" content="Ansh Rathod's Blog" />
         <meta
           property="og:description"
-          content="A Blog about flutter development
+          content="A Blog about flutter app development
 And Web dev's resources."
         />
         <meta property="og:type" content="article" />
@@ -104,121 +98,163 @@ And Web dev's resources."
         <title>Ansh Rathod's Blog</title>
       </Head>
 
-      {/* <div className="section"> */}
-        {/* <div className="navabr-slide"> */}
-          {/* <ul id="slide-out" className="sidenav">
-            <li />
-            <li>
-              <a href="#!"></a>
-            </li>
-            <li>
-              <a href="#!">Second Link</a>
-            </li>
-            <li>
-              <div className="divider" />
-            </li>
-            <li>
-              <a className="subheader">Subheader</a>
-            </li>
-            <li>
-              <a className="waves-effect" href="#!">
-                Third Link With Waves
-              </a>
-            </li>
-          </ul>
-          <a href="#" data-target="slide-out" className="sidenav-trigger">
-            <i class="fas fa-bars fa-2x"></i>
-          </a> */}
-        {/* </div> */}
-        <section>
-          <div className="Background-image">
-            <div className="overlay">
+      <nav className="navbar navbar-inverse navbar-fixed-top">
+        <div className="container">
+          <h5 className="navbar-brand p-0 m-0">Ansh Rathod's Blog</h5>
+          <div className="row p-3">
+            <a
+              href="https://twitter.com/appiirathod"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-twitter-square fa-2x text-light"></i>
+            </a>
+            <div style={{ width: "20px" }}></div>
+            <a
+              href="https://www.linkedin.com/in/ansh-rathod-478a81210/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin fa-2x text-light"></i>
+            </a>
+            <div style={{ width: "20px" }}></div>
 
-              <div className="container center-tag">
-                <div className="color-back">
-                  <h2>Ansh Rathod's Blog</h2>
-                </div>
-
-                <br />
-
-                <h1>
-                  A BLog about flutter development
-                  <br />
-                  And Web dev's resources.
-                </h1>
-                <br />
-
-                <a href="#" className="waves-effect waves-light btn btn-large">
-                  See All
-                </a>
-              </div>
-              <div className="container center-tag">
-                <div className="color-back" style={{ margin: "10px" }}>
-                  <h2>Latest Blogs</h2>
-                </div>
-                <Blogs posts={posts} />
-              </div>
-              <div className="container center-tag">
-                <div className="color-back" style={{ margin: "10px" }}>
-                  <h2>My Projects</h2>
-                </div>
-                <div className="row-element">
-                  {projects.map((project) => (
-                    <PorjectCard project={project} key={project.name} />
-                  ))}
-                </div>
-              </div>
-              <div className="container center-tag">
-                <div className="color-back">
-                  <h2>Get In Touch</h2>
-                </div>
-
-                <br />
-
-                <h1>
-                  Notify for every blogs, projects and resources that will help
-                  to development make easy.
-                </h1>
-                <br />
-                <div className="raw">
-                  <a
-                    href="https://twitter.com/appiirathod"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-twitter-square fa-3x"></i>
-                  </a>
-                  <div style={{ width: "20px" }}></div>
-                  <a
-                    href="https://www.linkedin.com/in/ansh-rathod-478a81210/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-linkedin fa-3x"></i>
-                  </a>
-                  <div style={{ width: "20px" }}></div>
-
-                  <a
-                    href="https://github.com/Ansh-Rathod"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-github-square fa-3x"></i>
-                  </a>
-                </div>
-              </div>
-          
-
-
-
-
-            </div>
-          
-          
+            <a
+              href="https://github.com/Ansh-Rathod"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github-square fa-2x text-light"></i>
+            </a>
           </div>
+        </div>
+      </nav>
+      <div className="main bg-primary">
+        <div className="landing">
+          <div
+            style={{ minHeight: "70vh" }}
+            className="container d-flex flex-column align-items-center text-center h-80 justify-content-center"
+          >
+            <h1 className="text-light mt-3">
+              Ansh Rathod's <span className="text-secondary">Blog</span>
+            </h1>
 
-        </section>
-      {/* </div> */}
+            <h3 className="text-light" style={{ maxWidth: "500px" }}>
+              <small>
+                Hey there, This is Ansh Rathod a Flutter and web developer. This
+                site is a Blog about flutter development And Web dev's
+                resources.
+              </small>
+            </h3>
+
+            <br />
+
+            <button className="btn btn-dark" onClick={executeScroll}>
+              Let's Read
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="bg-light" ref={myRef}>
+        <div className="container">
+          <br />
+          <br />
+          <h1 className="text-center">
+            <span className="text-primary">Latest Blog Posts</span>
+          </h1>
+
+          <p
+            className="text-center mx-auto p-3 text-dark"
+            style={{ maxWidth: "700px", fontSize: "1.5rem" }}
+          >
+            Find Out All Available Blog Post for flutter and web technologies.
+          </p>
+          <br />
+          <br />
+          <Blogs posts={posts} />
+          <br />
+          <br />
+          <center>
+            <button className="btn btn-dark mx-auto"> See All</button>
+          </center>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div className="bg-grey">
+        <div className="container">
+          <br />
+          <br />
+          <h1 className="text-center">
+            <span className="text-light">Projects</span>
+          </h1>
+
+          <p
+            className="text-center mx-auto p-3"
+            style={{ maxWidth: "700px", fontSize: "1.5rem" }}
+          >
+            I've worked with multiple technologies as a developer to develop &
+            maintain my projects.
+          </p>
+          <br />
+          <br />
+          <div className="row">
+            {projects.map((project) => (
+              <PorjectCard project={project} key={project.name} />
+            ))}
+          </div>
+          <br />
+          <br />
+        </div>
+
+        <div className="bg-light">
+          <div className="container">
+            <br />
+            <br />
+            <h1>
+              <span className="text-primary">Get In Touch</span>
+            </h1>
+
+            <p className="text-dark" style={{ fontSize: "1.5rem" }}>
+              To notify About upcoming blog post updates.
+            </p>
+
+            <div className="row p-3">
+              <a
+                href="https://twitter.com/appiirathod"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-twitter-square fa-3x text-primary"></i>
+              </a>
+              <div style={{ width: "20px" }}></div>
+              <a
+                href="https://www.linkedin.com/in/ansh-rathod-478a81210/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin fa-3x text-primary"></i>
+              </a>
+              <div style={{ width: "20px" }}></div>
+
+              <a
+                href="https://github.com/Ansh-Rathod"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github-square fa-3x text-primary"></i>
+              </a>
+            </div>
+            <hr />
+
+            <div className="container text-center text-dark">
+              &copy; 2021 Ansh Rathod's blog. All rights reserved.
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

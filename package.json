@@ -1,5 +1,5 @@
 {
-  "name": "myblog",
+  "name": "newstyle",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,10 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "grey-matter": "0.0.0",
-    "jquery": "^3.6.0",
     "marked": "^3.0.4",
-    "materialize-css": "^1.0.0-rc.2",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "webpack": "^5.53.0"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",

@@ -1,27 +1,33 @@
-import Link from "next/link";
 export default function Post({ post }) {
   return (
-    <div className="blog-container">
-      <br />
-      <img
-        src={post.frontmatter.cover_image}
-        alt=""
-        className="materialboxed img"
-      />
-      <div style={{ height: "20px" }}></div>
+    <div className="col col-sm-6 col-md-4 col-lg-3 mb-3">
+      <div
+        className="card shadow rounded"
+        style={{ minHeight: "100%", border: "0" }}
+      >
+        <img
+          src={post.frontmatter.cover_image}
+          alt=""
+          className="img-responsive"
+        />
+        <div className="card-body">
+          <p className="badge-primary badge">{post.frontmatter.date}</p>
+          <br />
 
-      <p className="date"> {post.frontmatter.date}</p>
-
-      <div style={{ height: "20px" }}></div>
-
-      <h4>{post.frontmatter.title}</h4>
-      <div style={{ height: "10px" }}></div>
-
-      <div style={{ height: "10px" }}></div>
-
-      <a href={`/blog/${post.slug}`} passHref target="_blank" rel="noreferrer">
-        <p className="btn">Read more</p>
-      </a>
+          <h5>{post.frontmatter.title}</h5>
+          <br />
+        </div>
+        <div className="card-footer bg-primary">
+          <a
+            href={`/blog/${post.slug}`}
+            passHref
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="btn bg-success text-light">Read full</div>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
