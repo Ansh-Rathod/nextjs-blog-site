@@ -11,7 +11,7 @@ export default function PorjectCard({ project }) {
         <div className="card-body">
           <p className="badge badge-primary">{project.date}</p>
 
-          <h5>{project.name + " - " + project.madeWith}</h5>
+          <h4>{project.name + " - " + project.madeWith}</h4>
 
           <p>{project.description}</p>
         </div>
