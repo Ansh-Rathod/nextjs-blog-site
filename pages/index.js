@@ -100,7 +100,9 @@ And Web dev's resources."
 
       <nav className="navbar navbar-inverse navbar-fixed-top">
         <div className="container">
-          <h5 className="navbar-brand p-0 m-0">Ansh Rathod's Blog</h5>
+          <h5 className="navbar-brand p-0 m-0 text-light">
+            Ansh Rathod's Blog
+          </h5>
           <div className="row p-3">
             <a
               href="https://twitter.com/appiirathod"
@@ -136,7 +138,7 @@ And Web dev's resources."
             className="container d-flex flex-column align-items-center text-center h-80 justify-content-center"
           >
             <h1 className="text-light mt-3">
-              Ansh Rathod's <span className="text-secondary">Blog</span>
+              Ansh Rathod's <strong className="text-secondary">Blog</strong>
             </h1>
 
             <h3 className="text-light" style={{ maxWidth: "500px" }}>
@@ -159,9 +161,7 @@ And Web dev's resources."
         <div className="container">
           <br />
           <br />
-          <h1 className="text-center">
-            <span className="text-primary">Latest Blog Posts</span>
-          </h1>
+          <h1 className="text-center text-dark">Latest Blog Posts</h1>
 
           <p
             className="text-center mx-auto p-3 text-dark"
@@ -185,9 +185,7 @@ And Web dev's resources."
         <div className="container">
           <br />
           <br />
-          <h1 className="text-center">
-            <span className="text-light">Projects</span>
-          </h1>
+          <h1 className="text-center text-light">Projects</h1>
 
           <p
             className="text-center mx-auto p-3"
@@ -212,7 +210,7 @@ And Web dev's resources."
             <br />
             <br />
             <h1>
-              <span className="text-primary">Get In Touch</span>
+              <h1 className="text-primary">Get In Touch</h1>
             </h1>
 
             <p className="text-dark" style={{ fontSize: "1.5rem" }}>

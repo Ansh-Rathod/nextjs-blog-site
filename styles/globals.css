@@ -1,0 +1,22 @@
+* {
+  font-family: "General Sans", sans-serif;
+  font-family: "Author", sans-serif;
+}
+p {
+  font-family: "Author", sans-serif;
+
+  font-size: 1.2rem;
+}
+/* font-family: 'General Sans', sans-serif; */
+/* font-family: 'Author', sans-serif; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn,
+strong {
+  letter-spacing: 1px;
+  font-family: "Tanker", sans-serif;
+}
