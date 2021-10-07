@@ -14,6 +14,16 @@ export default function Home({ posts }) {
 
   var projects = [
     {
+      name: "Happy Rock Music Player",
+      madeWith: "Flutter",
+      date: "26 september 2021",
+      description:
+        "Find the free and Royalty music with the Happy Rock application. The app contains information about singers and you can make your own playlist with Songs.",
+      url: "https://github.com/Ansh-Rathod/Flutter-Music-Player",
+      image:
+        "https://images.unsplash.com/photo-1519619091416-f5d7e5200702?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+    },
+    {
       name: "Tiktok video scroller",
       madeWith: "Flutter",
       date: "5 september 2021",
@@ -23,16 +33,7 @@ export default function Home({ posts }) {
       image:
         "https://images.unsplash.com/photo-1551232865-e24823b9e922?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
     },
-    {
-      name: "Marvel Comic Web app",
-      madeWith: "Python Flask",
-      date: "12 december 2020",
-      description:
-        "Marvel's Super-hero comics and characters information made in python flask with marvel devloper api.",
-      url: "https://github.com/Ansh-Rathod/marvel-api",
-      image:
-        "https://images.unsplash.com/photo-1568833450751-fba3c6b2d129?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    },
+
     {
       name: "SupHeroDb",
       madeWith: "Flutter",
@@ -53,6 +54,26 @@ export default function Home({ posts }) {
       image:
         "https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80",
     },
+
+    {
+      name: "Animalia",
+      madeWith: "Flutter",
+      date: "16 june 2021",
+      description:
+        "Discover cute, wild, and weird animals using the Animalia app.",
+      url: "https://github.com/Ansh-Rathod/Flutter-bloc-Animalia",
+      image:
+        "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      name: "Quizer",
+      madeWith: "Flutter",
+      date: "12 june 2021",
+      description: "Quizer Open Trivia app with opentdb api.",
+      url: "https://github.com/Ansh-Rathod/Flutter-Quizer-App",
+      image:
+        "https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+    },
     {
       name: "Sponacular",
       madeWith: "Flutter",
@@ -63,24 +84,16 @@ export default function Home({ posts }) {
       image:
         "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     },
+
     {
-      name: "Quizer",
-      madeWith: "Flutter",
-      date: "12 jun 2021",
-      description: "Quizer Open Trivia app with opentdb api.",
-      url: "https://github.com/Ansh-Rathod/Flutter-Quizer-App",
-      image:
-        "https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    },
-    {
-      name: "Animalia",
-      madeWith: "Flutter",
-      date: "16 june 2021",
+      name: "Marvel Comic Web app",
+      madeWith: "Python Flask",
+      date: "12 december 2020",
       description:
-        "Discover cute, wild, and weird animals using the Animalia app.",
-      url: "https://github.com/Ansh-Rathod/Flutter-bloc-Animalia",
+        "Marvel's Super-hero comics and characters information made in python flask with marvel devloper api.",
+      url: "https://github.com/Ansh-Rathod/marvel-api",
       image:
-        "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1568833450751-fba3c6b2d129?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     },
   ];
 
