@@ -2,7 +2,7 @@
 title: "How to get a dominant color from an image in a flutter."
 date: "22 septempber 2021"
 tags: Flutter
-cover_image: "https://github.com/anshrathod-blog/blog-images/blob/main/Untitled.png?raw=true"
+cover_image: "https://raw.githubusercontent.com/anshrathod-blog/blog-images/main/Untitled-min.png"
 ---
 
   <center>__ __ __</center>                  
