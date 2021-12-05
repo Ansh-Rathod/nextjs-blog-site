@@ -36,6 +36,7 @@ export default function socialapp({ data, type }) {
 						<a
 							href="https://github.com/Ansh-Rathod/Flutter-Photoarc-app"
 							target="_blank"
+							rel="noreferrer"
 							className="btn btn-primary"
 						>
 							Go to Github
@@ -108,6 +109,7 @@ export default function socialapp({ data, type }) {
 						<a
 							href="https://github.com/Ansh-Rathod/Flutter-Photoarc-app"
 							target="_blank"
+							rel="noreferrer"
 							className="btn btn-primary"
 						>
 							Go to Github
@@ -152,6 +154,7 @@ export default function socialapp({ data, type }) {
 						<a
 							href="https://github.com/Ansh-Rathod/Flutter-Photoarc-app"
 							target="_blank"
+							rel="noreferrer"
 							className="btn btn-primary"
 						>
 							Go to Github
