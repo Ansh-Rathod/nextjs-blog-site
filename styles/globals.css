@@ -1,11 +1,11 @@
 * {
-  font-family: "General Sans", sans-serif;
-  font-family: "Author", sans-serif;
+	font-family: 'General Sans', sans-serif;
+	font-family: 'Author', sans-serif;
 }
 p {
-  font-family: "Author", sans-serif;
+	font-family: 'Author', sans-serif;
 
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 /* font-family: 'General Sans', sans-serif; */
 /* font-family: 'Author', sans-serif; */
@@ -17,15 +17,15 @@ h4,
 h5,
 .btn,
 strong {
-  letter-spacing: 1px;
-  font-family: "Tanker", sans-serif;
+	letter-spacing: 1px;
+	font-family: 'Tanker', sans-serif;
 }
 .badge {
-  padding: 5px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: rgb(26, 24, 24);
-  background-color: rgb(138, 138, 138);
+	padding: 5px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgb(26, 24, 24);
+	background-color: rgb(138, 138, 138);
 }
