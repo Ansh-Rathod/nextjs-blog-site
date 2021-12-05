@@ -1,2 +1,4 @@
 [build.environment]
   NODE_VERSION="16.3.0"
+[functions]
+  node_bundler = "esbuild"
