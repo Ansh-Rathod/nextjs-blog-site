@@ -95,7 +95,7 @@ And Web dev's resources."
 				<title>Ansh Rathod's Blog</title>
 			</Head>
 
-			<nav className="navbar navbar-inverse navbar-fixed-top bg-secondary">
+			<nav className="navbar navbar-inverse navbar-fixed-top bg-dark">
 				<div className="container">
 					<h5 className="navbar-brand p-0 m-0 text-light">
 						Ansh Rathod's Blog
@@ -128,7 +128,7 @@ And Web dev's resources."
 					</div>
 				</div>
 			</nav>
-			<div className="main bg-dark">
+			<div className="main bg-primary">
 				<div className="landing">
 					<div
 						style={{ minHeight: '70vh' }}
