@@ -95,7 +95,7 @@ And Web dev's resources."
 				<title>Ansh Rathod's Blog</title>
 			</Head>
 
-			<nav className="navbar navbar-inverse navbar-fixed-top bg-dark">
+			<nav className="navbar navbar-inverse navbar-fixed-top bg-secondary">
 				<div className="container">
 					<h5 className="navbar-brand p-0 m-0 text-light">
 						Ansh Rathod's Blog

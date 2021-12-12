@@ -5,6 +5,10 @@ tags: useful websites
 cover_image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
 ---
 
+  <center>__ __ __</center>                  
+<br/>
+<br/>
+
 1. Hidden Tools –[https://hiddentools.dev/ 1](https://hiddentools.dev/)
 
 2. Music For Programming –[https://musicforprogramming.net/](https://musicforprogramming.net/)
