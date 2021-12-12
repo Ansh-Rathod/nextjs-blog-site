@@ -29,7 +29,7 @@ export default function Home({ posts }) {
 			description:
 				'Find the free and Royalty music with the Happy Rock application. The app contains information about singers and you can make your own playlist with Songs.',
 			url: 'https://github.com/Ansh-Rathod/Flutter-Music-Player',
-			image: 'projects/Web capture_4-12-2021_213611_github.com.jpeg',
+			image: 'projects/Web capture_12-12-2021_9428_github.com.jpeg',
 		},
 		{
 			name: 'Tiktok video scroller',
